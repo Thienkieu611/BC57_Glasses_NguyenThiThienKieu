@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.background-glasses{
+    position: relative;
+    z-index: 1;
+    .bg-glasses{
+        background-image: url(../../../public/img/bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(28, 28, 28, 0.5); 
+    }
+   
+}
+
+.title-glasses{
+    padding: 20px 0;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: block;
+    width: 100%;
+    h1{
+        font-weight: 400;
+    }
+}
+
+.content-glasses{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    display: block;
+    width: 100%;
+    .model{
+        display: flex;
+        justify-content: space-between;
+        max-width: 700px;
+        margin: 0 auto;
+        .model-img{
+            margin: 0px 50px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .model-left{
+            position: relative;
+            .overlay-model-left{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                color: black;
+                text-align: left;
+                padding: 0px 5px;
+                
+                background-color: rgba(251, 152, 90, 0.5);
+                h5{
+                    color: rgb(66, 66, 251);
+                    font-weight: 400;
+                }
+                p{
+                    font-size: 12px;
+                    color: white;
+                }
+            }
+        }
+        .model-right{
+           position: relative;
+           .glasses{
+            position: absolute;
+            top: 15%;
+            left: 9%;
+            width: 200px;
+            height: 200px;
+            transform: scale(0.7);
+           }
+        }
+    }
+    
+}
+.list-glasses{
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    display: block;
+    width: 60%;
+    height: 150px;
+    background-color: #fff;
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        .col-2{
+            padding: 15px 0;
+            button{
+                img{
+                    //display: inline-block;
+                    max-width: 100px;
+                   // width: 100%;
+                    height: 40px;
+                }
+            }
+
+        }
+    }
+    
+}
